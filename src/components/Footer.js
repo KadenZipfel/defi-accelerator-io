@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 
+import '../layout/components/footer.sass';
+
 class Footer extends Component {
   render() {
     return (
@@ -8,7 +10,7 @@ class Footer extends Component {
           Be the first to know when it's ready
         </h2>
         <form className="footer__form">
-          <input className="footer__input" type="text" placeholder="Email..." />
+          <input className="footer__input" type="email" placeholder="Email..." />
           <button className="footer__button">Subscribe</button>
         </form>
         <p className="footer__disclaimer">
@@ -25,7 +27,7 @@ class Footer extends Component {
           <p className="footer__link">
             Made with love by Kaden Zipfel
           </p>
-          <a href="https://discord.gg/cVNTgt">Discord</a>
+          <a href="https://discord.gg/cVNTgt" className="footer__link">Discord</a>
         </div>
       </footer>
     );
