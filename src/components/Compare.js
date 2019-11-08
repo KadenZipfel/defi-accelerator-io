@@ -26,7 +26,7 @@ class Compare extends Component {
               type='text' 
               className="compare__input" 
               value={this.state.amount} 
-              autoFocus="true"
+              autoFocus={true}
               onChange={this.handleChange}
               maxLength="7"
             />
