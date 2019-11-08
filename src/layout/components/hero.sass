@@ -14,6 +14,10 @@
   font-size: 84px
   font-weight: 100
   margin: 12px
+  +media($breakpoint-lg)
+    font-size: 72px
+  +media($breakpoint-md)
+    font-size: 60px
 
 .hero__hr
   width: 80vw
@@ -28,6 +32,8 @@
   width: 650px
   max-width: 90vw
   text-align: center
+  +media($breakpoint-lg)
+    font-size: 18px
 
 .hero__buttons
   display: flex
@@ -39,9 +45,14 @@
   margin: 8px
   height: 50px
   width: 240px
+  max-width: 45vw
   background: $color-gold
   border: none
   color: white
   font-size: 28px
   font-weight: 300
   cursor: pointer
+  +media($breakpoint-lg)
+    height: 40px
+    width: 200px
+    font-size: 24px
