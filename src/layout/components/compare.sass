@@ -12,6 +12,10 @@
   display: flex
   flex-direction: column
   align-items: center
+  +media($breakpoint-md)
+    height: 200px
+  +media($breakpoint-sm)
+    height: 240px
 
 .compare__heading
   font-weight: 100
@@ -19,10 +23,12 @@
   text-align: center
   margin-top: 48px
   margin-bottom: 16px
-  max-width: 95vw
   +media($breakpoint-md)
     font-size: 40px
-    max-width: 80vw
+    max-width: 90vw
+  +media($breakpoint-sm)
+    font-size: 32px
+    max-width: 95vw
 
 .compare__input
   font-family: Roboto
@@ -36,6 +42,10 @@
   +media($breakpoint-md)
     font-size: 40px
     width: 190px
+  +media($breakpoint-sm)
+    font-size: 32px
+    width: 150px
+    padding-left: 26px
 
 .compare__placeholder
   margin-right: 4px
@@ -55,6 +65,8 @@
   font-size: 23px
   text-align: center
   color: $color-black
+  +media($breakpoint-lg)
+    margin: 0
   +media($breakpoint-md)
     font-size: 20px
   +media($breakpoint-sm)

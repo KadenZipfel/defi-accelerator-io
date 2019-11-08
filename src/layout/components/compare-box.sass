@@ -16,6 +16,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5)
   +media($breakpoint-md)
     margin: 16px
+    margin-top: 32px
   
 .compare-box__header
   font-size: 48px
@@ -25,6 +26,8 @@
   display: flex
   align-items: center
   text-align: center
+  +media($breakpoint-md)
+    font-size: 36px
 
 .compare-box__item
   display: flex
@@ -37,6 +40,10 @@
   font-weight: 300
   margin: 0
   color: $color-white
+  +media($breakpoint-md)
+    font-size: 24px
+  +media($breakpoint-sm)
+    font-size: 18px
 
 .compare-box__item:nth-of-type(odd)
   background: $color-gold
