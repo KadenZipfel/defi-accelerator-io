@@ -1,3 +1,4 @@
+@import '../config/_breakpoints'
 @import '../config/_colors'
   
 .compare
@@ -8,6 +9,9 @@
 
 .compare__header
   height: 220px
+  display: flex
+  flex-direction: column
+  align-items: center
 
 .compare__heading
   font-weight: 100
@@ -15,22 +19,46 @@
   text-align: center
   margin-top: 48px
   margin-bottom: 16px
+  max-width: 95vw
+  +media($breakpoint-md)
+    font-size: 40px
+    max-width: 80vw
 
 .compare__input
   font-family: Roboto
   font-size: 48px
   background: inherit
-  width: 185px
-  margin-right: 12px
+  width: 220px
+  padding-left: 32px
   font-weight: 100
   border: none
   outline: none
+  +media($breakpoint-md)
+    font-size: 40px
+    width: 190px
+
+.compare__placeholder
+  margin-right: 4px
+  position: relative
+  display: inline-block
+
+.compare__placeholder::before
+  position: absolute
+  left: 8px
+  top: 1px
+  content: '$'
+  pointer-events: none
 
 .compare__info
+  max-width: 95vw
   font-weight: 300
   font-size: 23px
   text-align: center
   color: $color-black
+  +media($breakpoint-md)
+    font-size: 20px
+  +media($breakpoint-sm)
+    font-size: 18px
 
 .compare__boxes
   display: flex

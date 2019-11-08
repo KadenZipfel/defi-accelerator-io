@@ -21,15 +21,17 @@ class Compare extends Component {
       <section className="compare">
         <div className="compare__header">
           <h2 className="compare__heading">
-            See How Much $
-            <input 
-              type='text' 
-              className="compare__input" 
-              value={this.state.amount} 
-              autoFocus={true}
-              onChange={this.handleChange}
-              maxLength="7"
-            />
+            See How Much
+            <div className="compare__placeholder">
+              <input 
+                type='text' 
+                className="compare__input" 
+                value={this.state.amount} 
+                autoFocus={true}
+                onChange={this.handleChange}
+                maxLength="7"
+              />
+            </div>
             Can Make You
           </h2>
           <p className="compare__info">
