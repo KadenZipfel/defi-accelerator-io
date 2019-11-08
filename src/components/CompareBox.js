@@ -20,21 +20,21 @@ class CompareBox extends Component {
     let compareBoxItems = [];
 
     const defiAcceleratorValues = [
-      [['Interest Rate:'], [`%${this.state.defiAcceleratorInterestRateMantissa * 100}`]],
+      [['Interest Rate:'], [`%${(this.state.defiAcceleratorInterestRateMantissa * 100).toFixed(3)}`]],
       [['Balance:'], [`${this.props.amount}`]],
-      [['Yearly Interest:'], [`${this.props.amount * this.state.defiAcceleratorInterestRateMantissa}`]],
-      [['Monthly Interest:'], [`${(this.props.amount * this.state.defiAcceleratorInterestRateMantissa) / 12}`]],
-      [['Weekly Interest:'], [`${(this.props.amount * this.state.defiAcceleratorInterestRateMantissa) / 52}`]],
-      [['Daily Interest:'], [`${(this.props.amount * this.state.defiAcceleratorInterestRateMantissa) / 365}`]]
+      [['Yearly Interest:'], [`${(this.props.amount * this.state.defiAcceleratorInterestRateMantissa).toFixed(2)}`]],
+      [['Monthly Interest:'], [`${((this.props.amount * this.state.defiAcceleratorInterestRateMantissa) / 12).toFixed(2)}`]],
+      [['Weekly Interest:'], [`${((this.props.amount * this.state.defiAcceleratorInterestRateMantissa) / 52).toFixed(2)}`]],
+      [['Daily Interest:'], [`${((this.props.amount * this.state.defiAcceleratorInterestRateMantissa) / 365).toFixed(2)}`]]
     ]
 
     const compoundValues = [
-      [['Interest Rate:'], [`%${this.state.compoundInterestRateMantissa * 100}`]],
+      [['Interest Rate:'], [`%${(this.state.compoundInterestRateMantissa * 100).toFixed(3)}`]],
       [['Balance:'], [`${this.props.amount}`]],
-      [['Yearly Interest:'], [`${this.props.amount * this.state.compoundInterestRateMantissa}`]],
-      [['Monthly Interest:'], [`${(this.props.amount * this.state.compoundInterestRateMantissa) / 12}`]],
-      [['Weekly Interest:'], [`${(this.props.amount * this.state.compoundInterestRateMantissa) / 52}`]],
-      [['Daily Interest:'], [`${(this.props.amount * this.state.compoundInterestRateMantissa) / 365}`]],
+      [['Yearly Interest:'], [`${(this.props.amount * this.state.compoundInterestRateMantissa).toFixed(2)}`]],
+      [['Monthly Interest:'], [`${((this.props.amount * this.state.compoundInterestRateMantissa) / 12).toFixed(2)}`]],
+      [['Weekly Interest:'], [`${((this.props.amount * this.state.compoundInterestRateMantissa) / 52).toFixed(2)}`]],
+      [['Daily Interest:'], [`${((this.props.amount * this.state.compoundInterestRateMantissa) / 365).toFixed(2)}`]],
     ]
 
     if(this.props.header === "Defi Accelerator") {
