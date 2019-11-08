@@ -35,7 +35,7 @@ class HowItWorks extends Component {
           <div className="how-it-works__section">
             <img className="how-it-works__img" src={lifesaverGold} alt="Lifesaver" />
             <p className="how-it-works__text">
-              Risk is automatically managed so you don't have to worry
+              Risk is automatically managed, so you don't have to worry
             </p>
           </div>
           <div className="how-it-works__section">
