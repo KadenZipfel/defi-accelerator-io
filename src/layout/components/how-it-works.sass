@@ -1,4 +1,5 @@
 @import '../config/_colors'
+@import '../config/_breakpoints'
   
 .how-it-works
   display: flex
@@ -11,6 +12,10 @@
   display: flex
   flex-direction: column
   align-items: center
+  +media($breakpoint-md)
+    height: 200px
+  +media($breakpoint-sm)
+    height: 240px
 
 .how-it-works__heading
   font-weight: 100
@@ -19,12 +24,24 @@
   margin-top: 48px
   margin-bottom: 16px
   max-width: 90vw
+  +media($breakpoint-md)
+    font-size: 40px
+    max-width: 90vw
+  +media($breakpoint-sm)
+    font-size: 32px
+    max-width: 95vw
 
 .how-it-works__info
   font-weight: 300
   font-size: 23px
   text-align: center
   color: $color-black
+  +media($breakpoint-lg)
+    margin: 0
+  +media($breakpoint-md)
+    font-size: 20px
+  +media($breakpoint-sm)
+    font-size: 18px
 
 .how-it-works__sections
   display: flex
@@ -49,3 +66,7 @@
   font-size: 25px
   font-width: 100
   color: $color-black
+  +media($breakpoint-md)
+    font-size: 24px
+  +media($breakpoint-sm)
+    font-size: 18px
