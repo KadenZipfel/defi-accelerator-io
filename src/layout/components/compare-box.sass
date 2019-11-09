@@ -14,7 +14,10 @@
   margin: 32px
   margin-top: 0
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5)
+  +media($breakpoint-lg)
+    width: 400px
   +media($breakpoint-md)
+    width: 500px
     margin: 16px
     margin-top: 32px
   
@@ -40,7 +43,7 @@
   font-weight: 300
   margin: 0
   color: $color-white
-  +media($breakpoint-md)
+  +media($breakpoint-lg)
     font-size: 24px
   +media($breakpoint-sm)
     font-size: 18px
