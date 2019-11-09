@@ -38,8 +38,8 @@
   width: 220px
   padding-left: 32px
   font-weight: 100
-  border: none
   outline: none
+  border: none
   +media($breakpoint-md)
     font-size: 40px
     width: 190px
@@ -50,15 +50,25 @@
 
 .compare__placeholder
   margin-right: 4px
+  margin-left: 4px
   position: relative
   display: inline-block
 
 .compare__placeholder::before
   position: absolute
-  left: 8px
+  left: 4px
   top: 1px
   content: '$'
   pointer-events: none
+
+.compare__placeholder::after
+  position: absolute
+  bottom: 0
+  left: 0
+  height: 1px
+  width: 100%
+  content: ''
+  background: rgba($color-black, 0.6)
 
 .compare__info
   max-width: 95vw

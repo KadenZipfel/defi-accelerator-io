@@ -19,7 +19,6 @@ class App extends Component {
     const howitworksHeading = document.querySelector('.how-it-works__heading');
     const howitworksInfo = document.querySelector('.how-it-works__info');
     const howitworksSections = document.querySelectorAll('.how-it-works__section');
-    const footerHeader = document.querySelector('.footer__header');
     const compareBoxProps = document.querySelectorAll('.compare-box__prop');
     const compareBoxValues = document.querySelectorAll('.compare-box__value');
     
@@ -33,8 +32,7 @@ class App extends Component {
       howitworksSections[0],
       howitworksSections[1],
       howitworksSections[2],
-      howitworksSections[3],
-      footerHeader
+      howitworksSections[3]
     ];
 
     const fadeInElements = [
