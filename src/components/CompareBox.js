@@ -43,15 +43,15 @@ class CompareBox extends Component {
     ]
 
     if(this.props.header === "Defi Accelerator") {
-      defiAcceleratorValues.forEach((value) => {
+      defiAcceleratorValues.forEach((value, index) => {
         compareBoxItems.push(
-          <CompareBoxItem key={value[0]} prop={value[0]} value={value[1]} />
+          <CompareBoxItem key={index} index={index} prop={value[0]} value={value[1]} />
         );
       });
     } else if(this.props.header === "Compound") {
-      compoundValues.forEach((value) => {
+      compoundValues.forEach((value, index) => {
         compareBoxItems.push(
-          <CompareBoxItem key={value[0]} prop={value[0]} value={value[1]} />
+          <CompareBoxItem key={index} index={index} prop={value[0]} value={value[1]} />
         );
       });
     }

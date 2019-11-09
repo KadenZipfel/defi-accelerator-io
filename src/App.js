@@ -21,9 +21,10 @@ class App extends Component {
     const howitworksInfo = document.querySelector('.how-it-works__info');
     const howitworksSections = document.querySelectorAll('.how-it-works__section');
     const footerHeader = document.querySelector('.footer__header');
-    const footerForm = document.querySelector('.footer__form');
+    const compareBoxProps = document.querySelectorAll('.compare-box__prop');
+    const compareBoxValues = document.querySelectorAll('.compare-box__value');
     
-    const elements = [
+    const fadeUpElements = [
       compareHeading,
       compareInfo,
       compareBoxes[0],
@@ -34,14 +35,46 @@ class App extends Component {
       howitworksSections[1],
       howitworksSections[2],
       howitworksSections[3],
-      footerHeader,
-      footerForm
+      footerHeader
+    ];
+
+    const fadeInElements = [
+      compareBoxProps[0],
+      compareBoxProps[1],
+      compareBoxProps[2],
+      compareBoxProps[3],
+      compareBoxProps[4],
+      compareBoxProps[5],
+      compareBoxProps[6],
+      compareBoxProps[7],
+      compareBoxProps[8],
+      compareBoxProps[9],
+      compareBoxProps[10],
+      compareBoxProps[11],
+      compareBoxValues[0],
+      compareBoxValues[1],
+      compareBoxValues[2],
+      compareBoxValues[3],
+      compareBoxValues[4],
+      compareBoxValues[5],
+      compareBoxValues[6],
+      compareBoxValues[7],
+      compareBoxValues[8],
+      compareBoxValues[9],
+      compareBoxValues[10],
+      compareBoxValues[11],
     ];
 
     window.onscroll = () => {
-      elements.forEach((element) => {
+      fadeUpElements.forEach((element) => {
         if(window.scrollY + (window.innerHeight / 4) * 3 > element.offsetTop) {
           element.classList.add('fadeup');
+        }
+      });
+
+      fadeInElements.forEach((element) => {
+        if(window.scrollY + (window.innerHeight / 4) * 3 > element.offsetTop) {
+          element.classList.add('fadein');
         }
       });
     }
