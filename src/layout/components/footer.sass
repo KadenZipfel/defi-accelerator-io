@@ -1,4 +1,5 @@
 @import '../config/_colors'
+@import '../config/_breakpoints'
   
 .footer
   background: $color-black
@@ -11,6 +12,11 @@
   font-size: 48px
   font-weight: 100
   margin: 32px
+  text-align: center
+  +media($breakpoint-lg)
+    font-size: 40px
+  +media($breakpoint-md)
+    font-size: 32px
 
 .footer__form
   display: flex
@@ -28,6 +34,9 @@
   background: inherit
   border: 1px solid $color-gray
   color: white
+  +media($breakpoint-md)
+    height: 50px
+    width: 300px
 
 .footer__button
   width: 400px
@@ -42,6 +51,9 @@
   border: none
   margin-top: 8px
   cursor: pointer
+  +media($breakpoint-md)
+    height: 50px
+    width: 300px
 
 .footer__disclaimer
   text-align: center
@@ -68,3 +80,7 @@
 .footer__link
   color: $color-gray
   text-decoration: none
+
+.footer__link--name
+  +media($breakpoint-sm)
+    display: none

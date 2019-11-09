@@ -24,7 +24,7 @@ class Footer extends Component {
         <hr className="footer__hr" />
         <div className="footer__links">
           <a href="https://github.com/KadenZipfel" className="footer__link">Github</a>
-          <p className="footer__link">
+          <p className="footer__link footer__link--name">
             Made with love by Kaden Zipfel
           </p>
           <a href="https://discord.gg/cVNTgt" className="footer__link">Discord</a>
