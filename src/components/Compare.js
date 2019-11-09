@@ -16,6 +16,11 @@ class Compare extends Component {
     this.setState({amount: e.target.value});
   }
 
+  // https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript
+  numberWithCommas = (x) => {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
   render() {
     return (
       <section className="compare">
@@ -26,7 +31,7 @@ class Compare extends Component {
               <input 
                 type='text' 
                 className="compare__input" 
-                value={this.state.amount} 
+                value={this.state.amount.toLocaleString()}
                 autoFocus={true}
                 onChange={this.handleChange}
                 maxLength="7"
