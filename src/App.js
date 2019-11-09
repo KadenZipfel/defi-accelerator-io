@@ -12,7 +12,6 @@ class App extends Component {
     this.triggerAnimation();
   }
 
-  // Trigger an animation when the element is in the viewport
   triggerAnimation = () => {
     const compareHeading = document.querySelector('.compare__heading');
     const compareInfo = document.querySelector('.compare__info');
