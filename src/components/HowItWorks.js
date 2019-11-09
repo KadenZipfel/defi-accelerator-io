@@ -20,29 +20,33 @@ class HowItWorks extends Component {
           </p>
         </div>
         <div className="how-it-works__sections">
-          <div className="how-it-works__section">
-            <img className="how-it-works__img" src={daiGold} alt="Dai" />
-            <p className="how-it-works__text">
-              Deposit dai in the smart contract
-            </p>
+          <div>
+            <div className="how-it-works__section">
+              <img className="how-it-works__img" src={daiGold} alt="Dai" />
+              <p className="how-it-works__text">
+                Deposit dai in the smart contract
+              </p>
+            </div>
+            <div className="how-it-works__section">
+              <img className="how-it-works__img" src={arbitrageGold} alt="Arbitrage" />
+              <p className="how-it-works__text">
+                The smart contract leverages arbitrage opportunities on compound
+              </p>
+            </div>
           </div>
-          <div className="how-it-works__section">
-            <img className="how-it-works__img" src={arbitrageGold} alt="Arbitrage" />
-            <p className="how-it-works__text">
-              The smart contract leverages arbitrage opportunities on compound
-            </p>
-          </div>
-          <div className="how-it-works__section">
-            <img className="how-it-works__img" src={lifesaverGold} alt="Lifesaver" />
-            <p className="how-it-works__text">
-              Risk is automatically managed, so you don't have to worry
-            </p>
-          </div>
-          <div className="how-it-works__section">
-            <img className="how-it-works__img" src={daisGold} alt="Dais" />
-            <p className="how-it-works__text">
-              You can withdraw any amount any time
-            </p>
+          <div>
+            <div className="how-it-works__section">
+              <img className="how-it-works__img" src={lifesaverGold} alt="Lifesaver" />
+              <p className="how-it-works__text">
+                Risk is automatically managed, so you don't have to worry
+              </p>
+            </div>
+            <div className="how-it-works__section">
+              <img className="how-it-works__img" src={daisGold} alt="Dais" />
+              <p className="how-it-works__text">
+                You can withdraw any amount any time
+              </p>
+            </div>
           </div>
         </div>
       </section>
