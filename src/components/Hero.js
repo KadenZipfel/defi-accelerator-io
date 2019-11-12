@@ -14,14 +14,9 @@ class Hero extends Component {
           Earn up to 2x interest rate on compound by taking advantage of arbitrage 
           opportunities whilst automatically managing risk.
         </p>
-        <div className="hero__buttons">
-          <button className="hero__button">
-            Deposit
-          </button>
-          <button className="hero__button">
-            Withdrawal
-          </button>
-        </div>
+        <button className="hero__button">
+          Whitepaper
+        </button>
       </section>
     );
   }
