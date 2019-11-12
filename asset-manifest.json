@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/defi-accelerator-io/static/css/main.b0817afe.chunk.css",
-    "main.js": "/defi-accelerator-io/static/js/main.06d65044.chunk.js",
-    "main.js.map": "/defi-accelerator-io/static/js/main.06d65044.chunk.js.map",
+    "main.css": "/defi-accelerator-io/static/css/main.6f35003b.chunk.css",
+    "main.js": "/defi-accelerator-io/static/js/main.b0251f69.chunk.js",
+    "main.js.map": "/defi-accelerator-io/static/js/main.b0251f69.chunk.js.map",
     "runtime-main.js": "/defi-accelerator-io/static/js/runtime-main.2e139733.js",
     "runtime-main.js.map": "/defi-accelerator-io/static/js/runtime-main.2e139733.js.map",
-    "static/js/2.f1d000f6.chunk.js": "/defi-accelerator-io/static/js/2.f1d000f6.chunk.js",
-    "static/js/2.f1d000f6.chunk.js.map": "/defi-accelerator-io/static/js/2.f1d000f6.chunk.js.map",
+    "static/js/2.4cb50cdf.chunk.js": "/defi-accelerator-io/static/js/2.4cb50cdf.chunk.js",
+    "static/js/2.4cb50cdf.chunk.js.map": "/defi-accelerator-io/static/js/2.4cb50cdf.chunk.js.map",
     "index.html": "/defi-accelerator-io/index.html",
-    "precache-manifest.89c0c7ce4cc9e487823a4fc1c0885ae3.js": "/defi-accelerator-io/precache-manifest.89c0c7ce4cc9e487823a4fc1c0885ae3.js",
+    "precache-manifest.2d3623cf604afeb8bcf8d69b1d0adb86.js": "/defi-accelerator-io/precache-manifest.2d3623cf604afeb8bcf8d69b1d0adb86.js",
     "service-worker.js": "/defi-accelerator-io/service-worker.js",
-    "static/css/main.b0817afe.chunk.css.map": "/defi-accelerator-io/static/css/main.b0817afe.chunk.css.map"
+    "static/css/main.6f35003b.chunk.css.map": "/defi-accelerator-io/static/css/main.6f35003b.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.2e139733.js",
-    "static/js/2.f1d000f6.chunk.js",
-    "static/css/main.b0817afe.chunk.css",
-    "static/js/main.06d65044.chunk.js"
+    "static/js/2.4cb50cdf.chunk.js",
+    "static/css/main.6f35003b.chunk.css",
+    "static/js/main.b0251f69.chunk.js"
   ]
 }
