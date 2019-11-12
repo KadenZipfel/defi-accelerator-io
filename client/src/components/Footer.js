@@ -19,11 +19,9 @@ class Footer extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
-    axios
-      .post('/email', {email: this.state.email})
-      .then(() => {
-        this.setState({button: 'Thanks!'})
-      });
+    axios.post('/email', {email: this.state.email});
+
+    this.setState({button: 'Thanks!', email: ''});
   }
 
   render() {
