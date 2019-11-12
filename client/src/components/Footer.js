@@ -20,7 +20,7 @@ class Footer extends Component {
     e.preventDefault();
 
     axios
-      .post('/email', this.state.email)
+      .post('/email', {email: this.state.email})
       .then(() => {
         this.setState({button: 'Thanks!'})
       });
