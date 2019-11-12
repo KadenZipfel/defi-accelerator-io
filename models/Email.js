@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const emailSchema = new mongoose.Schema({
-  emails: [{
+  email: {
     type: String,
     trim: true
-  }]
+  }
 });
 
 const Email = mongoose.model('Email', emailSchema);

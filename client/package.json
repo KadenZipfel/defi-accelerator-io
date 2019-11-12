@@ -11,6 +11,7 @@
     "react-scripts": "3.2.0"
   },
   "homepage": "https://kadenzipfel.github.io/defi-accelerator-io/",
+  "proxy": "http://localhost:5000",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
