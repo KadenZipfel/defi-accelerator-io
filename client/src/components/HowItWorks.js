@@ -20,7 +20,7 @@ class HowItWorks extends Component {
           </p>
         </div>
         <div className="how-it-works__sections">
-          <div>
+          <div className="how-it-works__section-group">
             <div className="how-it-works__section">
               <img className="how-it-works__img" src={daiGold} alt="Dai" />
               <p className="how-it-works__text">
@@ -34,7 +34,7 @@ class HowItWorks extends Component {
               </p>
             </div>
           </div>
-          <div>
+          <div className="how-it-works__section-group">
             <div className="how-it-works__section">
               <img className="how-it-works__img" src={lifesaverGold} alt="Lifesaver" />
               <p className="how-it-works__text">
