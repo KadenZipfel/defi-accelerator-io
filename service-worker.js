@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/defi-accelerator-io/precache-manifest.44a62837bdcb6648e8e697d65f5294bb.js"
+  "/defi-accelerator-io/precache-manifest.ff25b07fed62c2e91c780d4ac4693051.js"
 );
 
 self.addEventListener('message', (event) => {
