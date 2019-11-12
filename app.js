@@ -1,15 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const keys = require('./config/keys');
 const Email = require('./models/Email');
 
 const app = express();
 
-if(process.env.NODE_ENV === 'production') {
-  mongoose.connect(keys.db);
-} else {
-  mongoose.connect('mongodb://localhost/defi-accelerator', { useNewUrlParser: true })
-}
+mongoose.connect('mongodb://kzipfel:ml4b-p455w0rd@ds029287.mlab.com:29287/defi-accelerator');
 
 app.post('/email', (req, res) => {
   Email.emails.push(req.body.email);
