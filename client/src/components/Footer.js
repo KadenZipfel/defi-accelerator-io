@@ -19,6 +19,7 @@ class Footer extends Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
+    // Should be error handling here
     axios.post('/email', {email: this.state.email});
 
     this.setState({button: 'Thanks!', email: ''});
