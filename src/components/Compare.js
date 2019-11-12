@@ -31,7 +31,7 @@ class Compare extends Component {
   
   resizeInput = () => {
     const input = document.querySelector('.compare__input');
-    input.style.width = input.value.length + 'ch';
+    input.style.width = input.value.length + 0.5 + 'ch';
   }
 
   render() {
