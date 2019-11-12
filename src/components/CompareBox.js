@@ -8,17 +8,36 @@ class CompareBox extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      defiAcceleratorInterestRateMantissa: 0.13467,
-      compoundInterestRateMantissa: 0.0633,
+      defiAcceleratorInterestRateMantissa: null,
+      compoundInterestRateMantissa: null,
       defiAcceleratorValues: null,
       compoundValues: null,
       compareBoxItems: null
     }
   }
 
+  componentDidMount = () => {
+    this.getCompoundSupplyRate();
+  }
+
   // https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript
   numberWithCommas = (x) => {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+
+  getCompoundSupplyRate = async () => {
+    const xhr = new XMLHttpRequest();
+    
+    xhr.open('GET', 'https://api.compound.finance/api/v2/ctoken?addresses[]=0xf5dce57282a584d2746faf1593d3121fcac444dc', true);
+    xhr.send();
+  
+    xhr.onreadystatechange = (e) => {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        const cDai = JSON.parse(xhr.responseText);
+        const supplyRate = cDai.cToken[0].supply_rate.value;
+        this.setState({compoundInterestRateMantissa: supplyRate, defiAcceleratorInterestRateMantissa: supplyRate * 1.5});
+      }
+    }
   }
 
   render() {
