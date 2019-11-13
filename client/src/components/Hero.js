@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 import '../layout/components/hero.sass';
 
+import whitepaper from '../documents/defi_accelerator.pdf';
+
 class Hero extends Component {
   render() {
     return (
@@ -14,9 +16,9 @@ class Hero extends Component {
           Earn up to 2x interest rate on compound by taking advantage of arbitrage 
           opportunities whilst automatically managing risk.
         </p>
-        <button className="hero__button">
+        <a className="hero__button" target="_blank" href={whitepaper}>
           Whitepaper
-        </button>
+        </a>
       </section>
     );
   }
