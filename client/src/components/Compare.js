@@ -31,7 +31,7 @@ class Compare extends Component {
   
   resizeInput = () => {
     const input = document.querySelector('.compare__input');
-    input.style.width = input.value.length + 0.5 + 'ch';
+    input.style.width = input.value.length + 1.5 + 'ch';
   }
 
   render() {
@@ -44,7 +44,7 @@ class Compare extends Component {
               <input 
                 type='text' 
                 className="compare__input"
-                value={this.state.amount.toLocaleString()}
+                value={this.state.amount}
                 autoFocus={this.state.mobileBrowser}
                 onChange={this.handleChange}
                 maxLength="7"
