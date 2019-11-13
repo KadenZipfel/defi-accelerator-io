@@ -15,7 +15,6 @@ class Compare extends Component {
 
   componentDidMount = () => {
     this.isNotMobileBrowser();
-    this.resizeInput();
   }
 
   handleChange = (e) => {
@@ -30,26 +29,41 @@ class Compare extends Component {
   }
   
   resizeInput = () => {
-    const input = document.querySelector('.compare__input');
-    input.style.width = input.value.length + 1.75 + 'ch';
+    window.setTimeout(() => {
+      const input = document.querySelector('.compare__input');
+      console.log(input);
+      if(input) {
+        input.style.width = input.value.length + 1.5 + 'ch';
+      }
+    }, 0);
   }
 
   render() {
+    let input;
+    
+    if(this.state.mobileBrowser === true) {
+      input = <div className="compare__placeholder">
+        <input 
+          type='text' 
+          className="compare__input"
+          value={this.state.amount}
+          autoFocus={true}
+          onChange={this.handleChange}
+          maxLength="7"
+        />
+      </div>
+    } else {
+      input = <span className="compare__amount">${this.state.amount.toLocaleString()}</span>
+    }
+
+    this.resizeInput();
+
     return (
       <section className="compare">
         <div className="compare__header">
           <h2 className="compare__heading">
             See How Much
-            <div className="compare__placeholder">
-              <input 
-                type='text' 
-                className="compare__input"
-                value={this.state.amount}
-                autoFocus={this.state.mobileBrowser}
-                onChange={this.handleChange}
-                maxLength="7"
-              />
-            </div>
+            {input}
             Can Make You
           </h2>
           <p className="compare__info">
