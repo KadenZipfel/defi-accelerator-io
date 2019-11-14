@@ -45,9 +45,9 @@ class Footer extends Component {
           You can unsubscribe at any time.
         </p>
         <p className="footer__disclaimer">
-          Defi Accelerator relies on an appropriate scaling solution and may never 
-          come to fruition. Interest rates are subject to change and are not 
-          guaranteed. Use at your own risk.
+          Use of Defi Accelerator has risk and can lead to fund loss. 
+          Interest rates are simply estimates and are not guaranteed. 
+          Use at your own risk.
         </p>
         <hr className="footer__hr" />
         <div className="footer__links">
@@ -55,7 +55,7 @@ class Footer extends Component {
           <p className="footer__link footer__link--name">
             Made with love by Kaden Zipfel
           </p>
-          <a href="https://discord.gg/cVNTgt" className="footer__link">Discord</a>
+          <a href="https://discord.gg/hQGMu3R" className="footer__link">Discord</a>
         </div>
       </footer>
     );

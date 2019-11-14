@@ -30,7 +30,7 @@ class HowItWorks extends Component {
             <div className="how-it-works__section">
               <img className="how-it-works__img" src={arbitrageGold} alt="Arbitrage" />
               <p className="how-it-works__text">
-                The smart contract leverages arbitrage opportunities on compound
+                A leveraged cDai position is taken by shorting Eth
               </p>
             </div>
           </div>
@@ -38,7 +38,7 @@ class HowItWorks extends Component {
             <div className="how-it-works__section">
               <img className="how-it-works__img" src={lifesaverGold} alt="Lifesaver" />
               <p className="how-it-works__text">
-                Risk is automatically managed, so you don't have to worry
+                Liquidation risk is algorithmically managed
               </p>
             </div>
             <div className="how-it-works__section">

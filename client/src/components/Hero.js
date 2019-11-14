@@ -13,10 +13,9 @@ class Hero extends Component {
         </h1>
         <hr className="hero__hr" />
         <p className="hero__info">
-          Earn up to 2x interest rate on compound by taking advantage of arbitrage 
-          opportunities whilst automatically managing risk.
+          Short the market and earn a higher interest rate.
         </p>
-        <a className="hero__button" target="_blank" href={whitepaper}>
+        <a className="hero__button" target="_blank" href={whitepaper} rel="noopener noreferrer">
           Whitepaper
         </a>
       </section>

@@ -67,7 +67,9 @@ class Compare extends Component {
             Can Make You
           </h2>
           <p className="compare__info">
-            Make the most of DeFi by maximizing your earnings.
+            Interest rates are based on the price of Ethereum staying stable.
+            <br />
+            Protocol interest is inversely related to the price of Ether.
           </p>
         </div>
         <div className="compare__boxes">
