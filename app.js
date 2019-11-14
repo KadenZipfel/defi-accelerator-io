@@ -3,10 +3,11 @@ const path = require('path');
 const mongoose = require('mongoose');
 const Email = require('./models/Email');
 const bodyParser = require('body-parser');
+const keys = require('./config/keys');
 
 const app = express();
 
-mongoose.connect('mongodb://kzipfel:ml4b-p455w0rd@ds029287.mlab.com:29287/defi-accelerator');
+mongoose.connect(keys.db);
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 app.use(bodyParser());
